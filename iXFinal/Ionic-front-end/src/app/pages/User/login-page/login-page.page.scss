@@ -1,0 +1,64 @@
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+  .li {
+    float: left;
+  }
+
+
+    ion-col {
+      text-align: center;
+      margin:auto;
+      }
+    
+  
+  .li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .li a:hover {
+    background-color: #111111;
+  }
+
+  .user-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  // ion-card{
+  //   width:40%;
+  //   margin: auto;
+  //   margin-top:20px;
+  // }
+
+  ion-card-title{
+    font-size: large;
+    text-align:center;
+  }
+
+  ion-content.background{
+    --background: url(https://blog.atairbnb.com/wp-content/uploads/2015/09/SummerTravelHeader-1600x900.001.jpg?fit=1600%2C900) 0 0/100% 100% no-repeat;
+  }
+
+  ion-card.background-card{
+    background-color: beige;
+  }
+
+  .background-header{
+    text-align: center;
+    --background:  beige;
+  }
+
+  .login-buttons {
+    margin-top: 10px;
+    text-align: center;
+  }

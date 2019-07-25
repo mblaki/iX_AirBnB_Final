@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="background-header">
+    <ion-title>Update A Listing</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+    <ion-card class="background-card">
+      <ion-card-header>
+        <ion-card-title>Update Listing Page</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="text" placeholder="Title" [(ngModel)] = "provider_listing.title" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Location" [(ngModel)] = "provider_listing.location"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Image URL" [(ngModel)] = "provider_listing.imgURL"></ion-input>
+          </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Description" [(ngModel)] = "provider_listing.description"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="number" placeholder="Capacity" [(ngModel)] = "provider_listing.capacity"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="number" placeholder="Price" [(ngModel)] = "provider_listing.price"></ion-input>
+          </ion-item>
+        <div>
+          <ul style="list-style: none;">
+              <li><ion-button size="medium" expand="block" (click)="update()">Update</ion-button></li>
+              <li><ion-button size="medium" expand="block" (click)="backToHome()">Back to Home</ion-button></li>
+              <li><ion-button size="medium" expand="block" (click)="delete()">Delete</ion-button></li>
+          </ul>
+        </div>
+    </ion-card-content>
+  
+  </ion-card>
+  
+  </ion-content>

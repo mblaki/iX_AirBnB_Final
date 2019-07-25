@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Explore Listings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-item >
+    
+    <ion-avatar  slot="start">
+      <img src="https://www.ibts.org/wp-content/uploads/2017/08/iStock-476085198.jpg">
+    </ion-avatar>
+    <ion-label size="x-large">{{currentUser.name}}      {{currentUser.surname}}</ion-label>
+  
+  <div class="explore" >
+    <ion-button item-right size="medium" (click)="alert('not a feature yet')">View My Bookings</ion-button>
+    <ion-button item-right size="medium" (click)="navToUserUpdate()">Update Profile</ion-button>
+    <ion-button item-right size="medium" (click)="backToLogin()">Back to Login</ion-button>
+  </div >
+  </ion-item>
+
+<br>
+
+<ion-content>
+  <ion-item class="exxplore" *ngFor="let list of listings" (click)="navToMakeBooking(list)">
+    <ion-thumbnail slot="start">
+      <img src="{{list.imgURL}}">
+    </ion-thumbnail>
+    <ion-label>{{list.title}}</ion-label>
+    <ion-label>Price: R{{list.price}} / Night</ion-label>
+  </ion-item>
+</ion-content>

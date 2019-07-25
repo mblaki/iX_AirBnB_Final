@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Make a Booking</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="center_me">
+          <ion-card-title>{{listing.title}}</ion-card-title>
+          <img src="{{listing.imgURL}}">
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>{{listing.location}}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Price: R{{listing.price}}
+          </ion-card-content>
+          <ion-card-content>
+            {{listing.description}}
+          </ion-card-content>
+         
+        </ion-card>
+
+      </ion-col>
+
+      <ion-col>
+
+          <ion-card class="make_card">
+              <ion-card-header>
+                <ion-card-title>Make Booking</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                <ion-item>
+                  <ion-input type="text" placeholder="Start Date" [(ngModel)]="startDate"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input type="text" placeholder="End Date" [(ngModel)]="endDate"></ion-input>
+                </ion-item>
+                <div *ngFor="let user of allUsers">
+                    <ion-card-content *ngIf='(user.id == listing.hostId)'>
+                      Provider Name: {{user.name}}  {{user.surname}}
+                      <br>
+                      Provider Email: {{user.email}}
+                      <br>
+                      This provider has {{i}} listings on the site
+                    </ion-card-content>
+                  </div>
+                <div>
+                  <ul style="list-style: none;">
+                    <li>
+                      <ion-button size="medium" expand="block" (click)="createNewBooking()">Make Booking</ion-button>
+                    </li>
+                    <li>
+                      <ion-button size="medium" expand="block" (click)="navToHome()">Back to Home</ion-button>
+                    </li>
+                  </ul>
+                </div>
+              </ion-card-content>
+          
+            </ion-card>
+
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  
+
+</ion-content>

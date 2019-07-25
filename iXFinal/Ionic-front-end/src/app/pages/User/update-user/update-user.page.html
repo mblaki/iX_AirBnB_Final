@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar class="background-header">
+    <ion-title>Update User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card class="background-card">
+      <ion-card-header>
+        <ion-card-title>User Information</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="text" placeholder="First Name" [(ngModel)] = "user.name" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Last Name" [(ngModel)] = "user.surname"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" placeholder="Choose an Email" [(ngModel)] = "user.email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Choose a Password" type="password" [(ngModel)] = "user.password"></ion-input>
+          </ion-item>
+        <div>
+              <ion-button size="medium" (click)="update()">Update</ion-button>
+              <ion-button size="medium" (click)="delete()">Delete</ion-button>
+              <ion-button size="medium" (click)="navToListings()">Back</ion-button>
+        </div>
+    </ion-card-content>
+
+    </ion-card>
+
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="background-header">
+    <ion-title>Welcome to AirBNB Host</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <div>
+    <ion-card class="background-card">
+      <ion-card-header>
+       <ion-card-title>Login Information</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-input type="text" placeholder="Email" [(ngModel)] = "email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" placeholder="Password" type="password" [(ngModel)] = "password" ></ion-input>
+        </ion-item>
+        <div class="login-buttons">
+          <ion-button size="medium" (click)="login()">Login</ion-button>
+          <ion-button size="medium" (click)="register()">Register</ion-button>
+      
+        </div>
+      </ion-card-content>
+
+    </ion-card>
+    <ion-card class="background-card">
+      <ion-card-header>
+        <ion-card-title> Are you a Guest? </ion-card-title>
+      </ion-card-header>
+      <div class="user-button">
+        <ion-button size="medium" (click)="navToUserLogin()">Go to Guest App</ion-button>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

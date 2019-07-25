@@ -1,0 +1,55 @@
+.explore{
+  float:right;
+}
+.exxplore{
+  width:80%;
+  margin:auto;
+}
+  
+
+  .head-buttons {
+    float: right;
+    margin-right:25px;
+    margin-bottom:25px;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  ion-thumbnail {
+    min-width: 8rem;    
+    min-height: 8rem;
+    img {
+        max-width: 8rem;    
+        min-width: 8rem;
+    }
+}
+
+ion-button{
+  height: 50px;
+  float:right;
+}
+ion-avatar{
+  height: 100%;
+}
+  
+.controll_div{
+  width:100%;
+}
+
+
+.login-buttons{
+  display: inline;
+  margin-right:150px;
+}
+  .blackText {
+    color: black;
+  }
+  
+  ion-col {
+    text-align: center;
+  }
+

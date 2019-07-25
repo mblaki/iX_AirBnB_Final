@@ -1,0 +1,30 @@
+ion-content.background{
+--background: url(https://blog.atairbnb.com/wp-content/uploads/2015/09/SummerTravelHeader-1600x900.001.jpg?fit=1600%2C900) 0 0/100% 100% no-repeat;
+}
+
+ion-card.background-card{
+background-color: beige;
+
+}
+ion-card{
+    width:40%;
+    margin: auto;
+    margin-top:20px;
+  }
+  ion-card-header{
+    font-size: x-large;
+  }
+  ion-card-title{
+    font-size: large;
+    text-align:center;
+  }
+
+.background-header{
+    text-align: center;
+    --background:  beige;
+  }
+
+  .register-buttons {
+    margin-top: 10px;
+    text-align: center;
+  }

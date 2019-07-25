@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>make-listing</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card class="background-card">
+    <ion-card-header>
+      <ion-card-title>Make a New Listing Page</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="text" placeholder="Title" [(ngModel)] = "listing.title" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="Location" [(ngModel)] = "listing.location"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input type="text" placeholder="Image URL" [(ngModel)] = "listing.imgURL"></ion-input>
+        </ion-item>
+      <ion-item>
+          <ion-input type="text" placeholder="Description" [(ngModel)] = "listing.description"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="number" placeholder="Capacity" [(ngModel)] = "listing.capacity"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="number" placeholder="Price" [(ngModel)] = "listing.price"></ion-input>
+        </ion-item>
+      <div>
+        <ul style="list-style: none;">
+            <li><ion-button size="medium" expand="block" (click)="createNewListing()">ADD LISTING</ion-button></li>
+            <li><ion-button size="medium" expand="block" (click)="backToHome()">Back to Home</ion-button></li>
+        </ul>
+      </div>
+  </ion-card-content>
+
+</ion-card>
+
+</ion-content>

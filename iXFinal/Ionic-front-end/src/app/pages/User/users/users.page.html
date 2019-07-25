@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="background-header">
+    <ion-title>
+      Users
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <div>
+    <h1>Users.page.html Welcome, {{email}}  ,  {{password}}</h1>
+    <ion-card *ngFor="let user of users" (click)="navToUserUpdate(user)" class="background-card">
+      <ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col push-md align-self: center>
+              <ion-card-subtitle>{{user.name}}</ion-card-subtitle>
+              <ion-card-title>{{user.surname}}</ion-card-title>
+              <ion-card-title>{{user.email}}</ion-card-title>
+            </ion-col>
+            <ion-col align-self: center>
+              <ion-card-title>{{user.role}}</ion-card-title>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-card-header>
+      <ion-card-content>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
